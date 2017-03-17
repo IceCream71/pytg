@@ -44,7 +44,7 @@ def handle_new_messages(channel, message_list, itr):
             if not flag:
                 if msg.id != channel["last_id"]:
                     new_message = Message(msg, channel)
-                    tracker = Timer(30.0, new_message.tracker, (s))
+                    tracker = Timer(30.0, new_message.tracker, (s, ))
                     tracker.start()
                 else:
                     channel["last_id"] = last_message.id
