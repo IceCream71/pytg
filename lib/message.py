@@ -1,4 +1,5 @@
 from threading import Timer
+from utils.db import insert
 import time
 
 
@@ -10,8 +11,8 @@ class Track(object):
         self.views = views
 
 class Message(object):
-
     count = 0
+    DB_FILENAME = 'db.json'
     def __init__(self, msg, channel):
         # self.service = msg.service
         # self.event = msg.event
@@ -30,20 +31,17 @@ class Message(object):
         self.id = msg.id
         self.tracks = []
         self.tracks.append(
-            Track( (self.msg.date * 1000), self.msg.views)
+            Track( (self.msg.date * 1000), 0) #self.msg.views
         )
         self.channel = channel
         self.count = 0
 
     def tracker(self, sender):
-        if self.count <= 60 :
-            postponed_tracker = Timer(30.0, self.tracker, (sender))
+        if self.count < 60 :
+            postponed_tracker = Timer(30.0, self.tracker, (sender, ))
             postponed_tracker.start()
         else:
-            f = open('db.json', 'w')
-            f.write()
-            f.close()
-
+            insert(self)
         track_result = sender.message_get(self.id)
         self.tracks.append(
             Track(current_milli_time(), track_result.views)

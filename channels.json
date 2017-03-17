@@ -1,0 +1,38 @@
+[
+	{
+		"admins_count": 0,
+		"peer_id": 1005665139,
+		"id": "$05000000733bfgit13b881baa7606ec925d",
+		"peer_type": "channel",
+		"print_name": "کانال_خبری_ایسنا",
+		"flags": 65537,
+		"participants_count": 0,
+		"title": "کانال خبری ایسنا",
+		"kicked_count": 0,
+		"username": "isna94"
+	},
+	{
+		"admins_count": 0,
+		"peer_id": 1002739327,
+		"id": "$050000007f96c43b09b3b2b1fa943602",
+		"peer_type": "channel",
+		"print_name": "باشگاه_خبرنگاران_جوان",
+		"flags": 65537,
+		"participants_count": 0,
+		"title": "باشگاه خبرنگاران جوان",
+		"kicked_count": 0,
+		"username": "yjcnewschannel"
+	},
+	{
+		"admins_count": 0,
+		"peer_id": 1007884158,
+		"id": "$050000007e17133c8800393fe34558b6",
+		"peer_type": "channel",
+		"print_name": "عصر_ایران",
+		"flags": 65537,
+		"participants_count": 0,
+		"title": "عصر ایران",
+		"kicked_count": 0,
+		"username": "MyAsriran"
+	}
+]

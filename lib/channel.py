@@ -4,3 +4,4 @@ class Channel(object):
     def __init__(self, peer):
         self.peer = peer
         self.posts = []
+        self.last_id = ""

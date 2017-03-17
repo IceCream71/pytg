@@ -1,6 +1,11 @@
 import json
+from threading import Timer
 from pymongo import MongoClient
 mongo_client = MongoClient()
+
+class Sample(object):
+    def get_list(self):
+        return 1
 
 class Test(object):
     def __init__(self):
@@ -9,12 +14,15 @@ class Test(object):
     def json_convert(self):
         return json.dumps(self.__dict__)
 
-def folan(input):
-    input *= 2
+    def folan(self, input):
+        result = input.get_list()
+        print result
+        loop = Timer(2, self.folan, (input,))
+        loop.start()
 
-bisar = 1
-folan(bisar)
-print bisar
+test = Test()
+sample = Sample()
+test.folan(sample)
 # test = Test()
 # db = mongo_client.telegram
 # db.telegram_data.insert(test.__dict__)
