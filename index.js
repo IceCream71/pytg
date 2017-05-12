@@ -135,6 +135,7 @@ const viewRequest = async function() {
   }
 }
 const saveToDb = async (obj) => {
+  // obj could be a single object or an array
   await mongoClient.collection('telegram_data').insert(obj)
   return
 }
