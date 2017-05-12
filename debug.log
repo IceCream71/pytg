@@ -1,0 +1,159 @@
+DEBUG=* node index.js > debug.log
+  follow-redirects options { maxRedirects: 21,
+  protocol: 'http:',
+  hostname: '149.154.167.51',
+  port: null,
+  path: '/apiw1',
+  method: 'post',
+  headers: { 'User-Agent': 'axios/0.15.3', 'Content-Length': 40 },
+  agent: undefined,
+  auth: undefined } +0ms
+  telegram-mtproto:auth [mtpAuth]  [0.145]  2 http://149.154.167.51/apiw1 +102ms
+  telegram-mtproto:auth [Send req_pq]  [0.146]  5da9355d337c787b928f949bea207a41 +7ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [0.190]  60469778 1615239032 req_pq[id]:int +2ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [0.200]  UNDEF 0 auth_key_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [0.200]  UNDEF 0 auth_key_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [0.200]  1d007db4 486571444 msg_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [0.200]  58d7ccba 1490537658 msg_id:long[high] +1ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [0.200]  14 20 request_length:int +0ms
+  follow-redirects options { maxRedirects: 21,
+  protocol: 'http:',
+  hostname: '149.154.167.51',
+  port: null,
+  path: '/apiw1',
+  method: 'post',
+  headers: { 'User-Agent': 'axios/0.15.3', 'Content-Length': 340 },
+  agent: undefined,
+  auth: undefined } +3s
+  telegram-mtproto:tl [int bytes]  [0.453]  5da9355d337c787b928f949bea207a41 ResPQ[resPQ][nonce]:int128 +3ms
+  telegram-mtproto:tl [int bytes]  [0.453]  e115703c33583ab366902e44d7eb465f ResPQ[resPQ][server_nonce]:int128 +1ms
+  telegram-mtproto:tl [bytes]  [0.453]  1cc2f47a58a75119 ResPQ[resPQ][pq]:bytes +0ms
+  telegram-mtproto:auth [Got ResPQ]  [0.453]  e115703c33583ab366902e44d7eb465f 1cc2f47a58a75119 [ '14101943622620965665' ] +0ms
+  telegram-mtproto:auth [PQ factorization start]  [0.454]  28,194,244,122,88,167,81,25 +0ms
+  telegram-mtproto:auth [PQ factorization done]  [2.969]  107450 +0ms
+  telegram-mtproto:auth [afterReqDH]  [2.986]  Send req_DH_params +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  83c95aec 2211011308 DECRYPTED_DATA.p_q_inner_data[id]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  d712e4be 3608339646 req_DH_params[id]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  6ce86b21 1827171105 f req_DH_params(public_key_fingerprint):long[low] +1ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  -3c4bd4fe -1011602686 f req_DH_params(public_key_fingerprint):long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  UNDEF 0 auth_key_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  UNDEF 0 auth_key_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  2c33904 46348548 msg_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  58d7ccbd 1490537661 msg_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [2.986]  140 320 request_length:int +0ms
+  follow-redirects options { maxRedirects: 21,
+  protocol: 'http:',
+  hostname: '149.154.167.51',
+  port: null,
+  path: '/apiw1',
+  method: 'post',
+  headers: { 'User-Agent': 'axios/0.15.3', 'Content-Length': 396 },
+  agent: undefined,
+  auth: undefined } +566ms
+  telegram-mtproto:tl [int bytes]  [3.246]  5da9355d337c787b928f949bea207a41 RESPONSE[server_DH_params_ok][nonce]:int128 +0ms
+  telegram-mtproto:tl [int bytes]  [3.246]  e115703c33583ab366902e44d7eb465f RESPONSE[server_DH_params_ok][server_nonce]:int128 +1ms
+  telegram-mtproto:tl [bytes]  [3.247]  980d2200a1daf83c8bbbdace07570bdef3cfeb652d4c04d9c3c56b5c0d7e48a523a7707124d415f07171de50b22573fbd2dc4872ae54c0cb2e6b6ee791fa4617c93bcbdcf101a631308eeb RESPONSE[server_DH_params_ok][encrypted_answer]:bytes +0ms
+  telegram-mtproto:tl [int bytes]  [3.256]  5da9355d337c787b928f949bea207a41 Server_DH_inner_data[server_DH_inner_data][nonce]:int128 +0ms
+  telegram-mtproto:tl [int bytes]  [3.256]  e115703c33583ab366902e44d7eb465f Server_DH_inner_data[server_DH_inner_data][server_nonce]:int128 +0ms
+  telegram-mtproto:tl [bytes]  [3.257]  c71caeb9c6b1c9048e6c522f70f13f73980d40238e3e21c14934d037563d930f48198a0aa7c14058229493d22530f4dbfa336f6e0ac925139543aed44cce7c3720fd51f69458705ac68cd4 Server_DH_inner_data[server_DH_inner_data][dh_prime]:bytes +0ms
+  telegram-mtproto:tl [bytes]  [3.257]  2d747b169f532321bd09208e59fe3f42a0953a41ba18360d405edcd17211262c16cff523c7e1c5ba1ff7187107cc2e1249d309bc3fa7f495ed0751157cb0870dab78ae4041f98950cccedf Server_DH_inner_data[server_DH_inner_data][g_a]:bytes +0ms
+  telegram-mtproto:auth [DecryptServerDhDataAnswer]  [3.257]  Done decrypting answer +0ms
+  telegram-mtproto:auth [VerifyDhParams]  [3.257]  begin +0ms
+  telegram-mtproto:auth [VerifyDhParams]  [3.257]  dhPrime cmp OK +0ms
+  telegram-mtproto:auth [VerifyDhParams]  [3.259]  2^{2048-64} < gA < dhPrime-2^{2048-64} OK +0ms
+  telegram-mtproto:time-manager [Apply server time]  [3.260]  1490537661 1490537661296 0 false +0ms
+  telegram-mtproto:auth [onGb]  [3.555]  Send set_client_DH_params +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  6643b654 1715713620 undefined.client_DH_inner_data[id]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  UNDEF 0 undefined.client_DH_inner_data.retry_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  UNDEF 0 undefined.client_DH_inner_data.retry_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  f5045f1f 4110704415 set_client_DH_params[id]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  UNDEF 0 auth_key_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  UNDEF 0 auth_key_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  4a0776dc 1242003164 msg_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  58d7ccbd 1490537661 msg_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [3.556]  178 376 request_length:int +0ms
+  follow-redirects options { maxRedirects: 21,
+  protocol: 'http:',
+  hostname: '149.154.167.51',
+  port: null,
+  path: '/apiw1',
+  method: 'post',
+  headers: { 'User-Agent': 'axios/0.15.3', 'Content-Length': 184 },
+  agent: undefined,
+  auth: undefined } +815ms
+  telegram-mtproto:tl [int bytes]  [4.048]  5da9355d337c787b928f949bea207a41 Set_client_DH_params_answer[dh_gen_ok][nonce]:int128 +2ms
+  telegram-mtproto:tl [int bytes]  [4.048]  e115703c33583ab366902e44d7eb465f Set_client_DH_params_answer[dh_gen_ok][server_nonce]:int128 +0ms
+  telegram-mtproto:tl [int bytes]  [4.048]  6f91ab5d213dbb6596b4e0e2c3815041 Set_client_DH_params_answer[dh_gen_ok][new_nonce_hash1]:int128 +0ms
+  telegram-mtproto:auth [Got Set_client_DH_params_answer]  [4.359]  dh_gen_ok +0ms
+  telegram-mtproto:networker [Api call]  [4.363]  help.getNearestDc {} 6401810512583256596 1 { dcID: 2,
+  createNetworker: true,
+  resultType: 'NearestDc',
+  messageID: '6401810512583256596' } +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.364]  da9b0d0d 3667594509 invokeWithLayer:int +1ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.364]  39 57 layer:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.364]  69796de9 1769565673 initConnection:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.364]  12e93 77459 api_id:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.364]  1fb33026 531836966 help.getNearestDc[id]:int +0ms
+  telegram-mtproto:networker [Container]  [4.365]  6401810512583256596,6401810512587418580 6401810512587665596 4 +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.367]  9299359f 2459514271 http_wait[id]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.367]  1f4 500 f http_wait(max_delay):int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.369]  96 150 f http_wait(wait_after):int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.369]  bb8 3000 f http_wait(max_wait):int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  73f1f8dc 1945237724 CONTAINER[id]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  2 2 CONTAINER[count]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  31e2ea14 836954644 CONTAINER[0][msg_id]:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  58d7ccbe 1490537662 CONTAINER[0][msg_id]:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  1 1 CONTAINER[0][seq_no]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  48 72 CONTAINER[0][bytes]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  32226bd4 841116628 CONTAINER[1][msg_id]:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  58d7ccbe 1490537662 CONTAINER[1][msg_id]:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  3 3 CONTAINER[1][seq_no]:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.370]  10 16 CONTAINER[1][bytes]:int +1ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.371]  322630bc 841363644 message_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.371]  58d7ccbe 1490537662 message_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.371]  4 4 seq_no:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.371]  80 128 message_data_length:int +0ms
+  follow-redirects options { maxRedirects: 21,
+  protocol: 'http:',
+  hostname: '149.154.167.51',
+  port: null,
+  path: '/apiw1',
+  method: 'post',
+  headers: { 'User-Agent': 'axios/0.15.3', 'Content-Length': 72 },
+  agent: undefined,
+  auth: undefined } +420ms
+(node:25763) UnhandledPromiseRejectionWarning: Unhandled promise rejection (rejection id: 1): Error: MT[401] AUTH_KEY_EMPTY: 
+(node:25763) DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+  telegram-mtproto:tl [int bytes]  [4.786]  9d59881927656b86 auth_key_id:int64 +180ms
+  telegram-mtproto:tl [int bytes]  [4.786]  d4f7621c064415c2afd1917f48f6a98e msg_key:int128 +1ms
+  telegram-mtproto:tl [raw bytes]  [4.787]  55e38a18c1e7b20426f29b611bb9b6656195c266cfbe0ba6054ea7eac1ea261669aa9cdeafe4406e5e6236992774b35ce8bc8179068e350d59cd33aaab8931816d35d2311957db7c3ea28d encrypted_data +0ms
+  telegram-mtproto:networker [MT call]  [4.787]  http_wait { max_delay: 500, wait_after: 150, max_wait: 25000 } 6401810513472335540 5 +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  9299359f 2459514271 http_wait[id]:int +1ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  1f4 500 f http_wait(max_delay):int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  96 150 f http_wait(wait_after):int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  61a8 25000 f http_wait(max_wait):int +1ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  66e12eb4 1726033588 message_id:long[low] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  58d7ccbe 1490537662 message_id:long[high] +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  5 5 seq_no:int +0ms
+  telegram-mtproto:tl:type-buffer [writeInt]  [4.788]  10 16 message_data_length:int +0ms
+  telegram-mtproto:tl [int bytes]  [4.790]  e55c2c6be7f450a2 salt:int64 +1ms
+  telegram-mtproto:tl [int bytes]  [4.790]  2123078022e93d36 session_id:int64 +0ms
+  telegram-mtproto:tl [raw bytes]  [4.790]  dcf8f1730200000001008251bfccd758010000001c0000000809c29e14eae231beccd758bd7f36e3b8e9a6e5e55c2c6be7f450a201103854bfccd758030000001c000000016d5cf314eae2 message_data +0ms
+  telegram-mtproto:tl [string]  [4.793]  RO INPUT[msg_container][messages][1][message][body][rpc_result][result][nearestDc][country]:string +0ms
+  telegram-mtproto:networker [Server response]  [4.794]  2 { response: { _: 'msg_container', messages: [ [Object], [Object] ] },
+  messageID: '6401810518099063809',
+  sessionID: Uint8Array [ 33, 35, 7, 128, 34, 233, 61, 54 ],
+  seqNo: 4 } +1ms
+  telegram-mtproto:networker [Rpc response]  [4.796]  { _: 'nearestDc', country: 'RO', this_dc: 2, nearest_dc: 4 } +2ms
+  telegram-mtproto:api-manager [nearest Dc]  [4.797]  { _: 'nearestDc', country: 'RO', this_dc: 2, nearest_dc: 4 } +2ms
+  telegram-mtproto:tl [int bytes]  [30.047]  9d59881927656b86 auth_key_id:int64 +25s
+  telegram-mtproto:tl [int bytes]  [30.047]  7a49bae7020df7a839e9bd671259eb87 msg_key:int128 +1ms
+  telegram-mtproto:tl [raw bytes]  [30.048]  6eba45588a285ea8db5bf089a04d4890c356394256c28b6e7824d523155f11b590d90d3ccf6ee293486d57fc71b42ec454f9e985a6aaa04e4fa2b6b481c30248a34d45f4915150eea8c83e encrypted_data +0ms
+  telegram-mtproto:tl [int bytes]  [30.052]  e55c2c6be7f450a2 salt:int64 +0ms
+  telegram-mtproto:tl [int bytes]  [30.052]  2123078022e93d36 session_id:int64 +1ms
+  telegram-mtproto:tl [raw bytes]  [30.052]  dcf8f1730200000001008251bfccd758010000001c0000000809c29e14eae231beccd758bd7f36e3b8e9a6e5e55c2c6be7f450a201103854bfccd758030000001c000000016d5cf314eae2 message_data +2ms
+  telegram-mtproto:networker [Server response]  [30.053]  2 { response: { _: 'msg_container', messages: [ [Object], [Object] ] },
+  messageID: '6401810626576086017',
+  sessionID: Uint8Array [ 33, 35, 7, 128, 34, 233, 61, 54 ],
+  seqNo: 4 } +1ms
+

@@ -1,0 +1,26 @@
+{
+  "name": "etg-cli-node",
+  "version": "1.0.0",
+  "description": "Extended tg-cli-node package, contains channel commands and other missing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IceCream71/tg-cli-node.git"
+  },
+  "author": "Mohammad Naseri / mohammad.nsr@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IceCream71/tg-cli-node/issues"
+  },
+  "homepage": "https://github.com/IceCream71/tg-cli-node#readme",
+  "dependencies": {
+    "gen-run": "^0.1.2",
+    "path": "^0.12.7",
+    "promise-queue": "^2.2.3",
+    "prompt": "^1.0.0",
+    "telegram-mtproto": "^2.2.2",
+  }
+}

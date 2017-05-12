@@ -1,2 +1,3 @@
 .idea
-sample.py
+python/sample.py
+node/node_modules
