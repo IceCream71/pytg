@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IceCream71/tg-cli-node.git"
+    "url": "git+https://github.com/IceCream71/rubick.git"
   },
   "author": "Mohammad Naseri / mohammad.nsr@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IceCream71/tg-cli-node/issues"
+    "url": "https://github.com/IceCream71/rubick/issues"
   },
-  "homepage": "https://github.com/IceCream71/tg-cli-node#readme",
+  "homepage": "https://github.com/IceCream71/rubick#readme",
   "dependencies": {
     "gen-run": "^0.1.2",
     "path": "^0.12.7",

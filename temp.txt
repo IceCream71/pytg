@@ -1,0 +1,60 @@
+
+
+/*pts : updatesState.pts,
+ date: 1491598796,
+ qts : -1*/
+/*channel: {
+ _          : 'inputPeerChannel',
+ channel_id : channel.id,
+ access_hash: channel.access_hash
+ },
+ pts: updatesState.pts,
+ filter: exclude_new_messages: false,
+ ranges              : [
+ {
+ min_id: 0,
+ max_id: 0
+ }
+ ],
+ limit: 100*/
+/*
+ const exportedAuth = await client('auth.exportAuthorization')
+ fs.writeFileSync('auth', exportedAuth.bytes)
+* */
+/*let bytesAuth = new Uint8Array(authFile)
+ let auth = await client('auth.importAuthorization', {
+ id: user_id,
+ bytes:
+ }, { createNetworker: true})
+ console.log(auth)*/
+/*const app = {
+ id: 49631,
+ hash: 'fb050b8f6771e15bfda5df2409931569'
+ };*/
+/*
+ if (differenceResult._ === 'updates.channelDifference') {
+ const messages = differenceResult.new_messages.filter((message) => {
+ const { date } = message
+ let nowTime = (new Date()).getTime()
+ nowTime = Math.floor(nowTime / 1000)
+ // return Math.abd(date - nowTime) < 60
+ return true
+ })
+ if (messages.length) {
+ channel.min_id = messages[messages.length - 1].id
+ trackingMessages = trackingMessages.concat(messages)
+ console.log(`${messages.length} new messages added in tracking loop`)
+ messages.forEach((element) => {
+ element.trackCycles = [{
+ date : element.date,
+ views: element.views
+ }]
+ element.cycle = 0
+ element.tracker = messageTracker.bind(element)
+ element.addTrackCycle = addTrackCycle.bind(element)
+ element.viewRequest = viewRequest.bind(element)
+ setTimeout(element.viewRequest, 30000)
+ })
+ }
+ }
+* */
