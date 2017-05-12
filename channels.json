@@ -1,0 +1,118 @@
+[
+  {
+    "_": "channel",
+    "flags": 8288,
+    "broadcast": true,
+    "id": 1006430686,
+    "access_hash": "2955692236583185037",
+    "title": "BBCPersian",
+    "username": "bbcpersian",
+    "photo": {
+      "_": "chatPhoto",
+      "photo_small": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "814419985",
+        "local_id": 51121,
+        "secret": "5539327279514745389"
+      },
+      "photo_big": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "814419985",
+        "local_id": 51123,
+        "secret": "2595623149430062762"
+      }
+    },
+    "date": 1492808319,
+    "version": 0,
+    "updateState": false
+  },
+  {
+    "_": "channel",
+    "flags": 8288,
+    "broadcast": true,
+    "id": 1002739327,
+    "access_hash": "8027067239994470479",
+    "title": "باشگاه خبرنگاران جوان",
+    "username": "yjcnewschannel",
+    "photo": {
+      "_": "chatPhoto",
+      "photo_small": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "426321623",
+        "local_id": 287135,
+        "secret": "5028708476696066261"
+      },
+      "photo_big": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "426321623",
+        "local_id": 287137,
+        "secret": "468625772120689843"
+      }
+    },
+    "date": 1492808313,
+    "version": 0,
+    "updateState": false
+  },
+  {
+    "_": "channel",
+    "flags": 8288,
+    "broadcast": true,
+    "id": 1002062924,
+    "access_hash": "13039808967757968595",
+    "title": "خبرهای فوری / مهم🔖",
+    "username": "Khabar_Fouri",
+    "photo": {
+      "_": "chatPhoto",
+      "photo_small": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "426204700",
+        "local_id": 191925,
+        "secret": "16862531079918739122"
+      },
+      "photo_big": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "426204700",
+        "local_id": 191927,
+        "secret": "12275445363747730061"
+      }
+    },
+    "date": 1492808331,
+    "version": 0,
+    "updateState": false
+  },
+  {
+    "_": "channel",
+    "flags": 8288,
+    "broadcast": true,
+    "id": 1007884158,
+    "access_hash": "15247082980361114192",
+    "title": "عصر ایران",
+    "username": "MyAsriran",
+    "photo": {
+      "_": "chatPhoto",
+      "photo_small": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "812821511",
+        "local_id": 59033,
+        "secret": "12661221852667107625"
+      },
+      "photo_big": {
+        "_": "fileLocation",
+        "dc_id": 4,
+        "volume_id": "812821511",
+        "local_id": 59035,
+        "secret": "10679022459115155968"
+      }
+    },
+    "date": 1492808213,
+    "version": 0,
+    "updateState": false
+  }
+]

@@ -18,9 +18,11 @@
   "homepage": "https://github.com/IceCream71/rubick#readme",
   "dependencies": {
     "gen-run": "^0.1.2",
+    "jsonfile": "^3.0.0",
+    "mongodb": "^2.2.26",
     "path": "^0.12.7",
     "promise-queue": "^2.2.3",
     "prompt": "^1.0.0",
-    "telegram-mtproto": "^2.2.2",
+    "telegram-mtproto": "^2.2.2"
   }
 }
